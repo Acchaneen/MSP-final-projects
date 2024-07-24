@@ -16,7 +16,7 @@ public class Book {
     private String publishingDate;
     private int version;
     private Author author;
-    private ArrayList<Book> books;
+    
 
     public Book(int id, String title, String publishingDate, int version, Author author) {
         this.id = id;
@@ -24,7 +24,6 @@ public class Book {
         this.publishingDate = publishingDate;
         this.version = version;
         this.author = author;
-        this.books = new ArrayList<>();
     }
 
     // Getters and setters for all fields
