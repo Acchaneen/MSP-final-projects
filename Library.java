@@ -11,15 +11,15 @@ import java.util.ArrayList;
 public class Library {
     // Library.java
 
-    private ArrayList<Class1.Author> authors;
-    private ArrayList<Class1.Book> books;
+    private ArrayList<Author> authors;
+    private ArrayList<Book> books;
 
     public Library() {
         this.authors = new ArrayList<>();
         this.books = new ArrayList<>();
     }
 
-    public void addAuthor(Class1.Author author) {
+    public void addAuthor(Author author) {
         authors.add(author);
     }
 
@@ -28,7 +28,7 @@ public class Library {
     }
 
     public void printAuthor(int id) {
-        for (Class1.Author author : authors) {
+        for (Author author : authors) {
             if (author.getId() == id) {
                 System.out.println("Author Name: " + author.getName());
                 System.out.println("Author Phone: " + author.getPhone());
@@ -39,9 +39,9 @@ public class Library {
     }
 
     public void printAuthorBooks(int id) {
-        for (Class1.Author author : authors) {
+        for (Author author : authors) {
             if (author.getId() == id) {
-                for (Class1.Book book : books) {if (book.getAuthor().getId() == id) {
+                for (Book book : books) {if (book.getAuthor().getId() == id) {
                         System.out.println("Book Title: " + book.getTitle());
                         System.out.println("Book Publishing Date: " + book.getPublishingDate());
                         System.out.println("Book Version: " + book.getVersion());
@@ -52,7 +52,7 @@ public class Library {
         }
     }
 
-    public void addBook(Class1.Book book) {
+    public void addBook(Book book) {
         books.add(book);
     }
 
