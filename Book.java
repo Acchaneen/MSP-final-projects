@@ -79,12 +79,8 @@ public class Book {
     
 public void listBooks() {
     for (Book book : books) {
-        System.out.println("Book ID: " + book.getId());
-        System.out.println("Book Title: " + book.getTitle());
-        System.out.println("Book Publishing Date: " + book.getPublishingDate());
-        System.out.println("Book Version: " + book.getVersion());
-        System.out.println("Book Author: " + book.getAuthor().getName()); // assuming Author has a getName() method
-        System.out.println(); // empty line for better readability
+        library.printAuthorBooks(1);
+
     }
 }               
             }
